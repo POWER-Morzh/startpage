@@ -124,37 +124,32 @@
 		<div class="row">
 			<article style="opacity: 1;" class="text-center auge">
 				<a href="http://www.classiclike.com/">
-					<img class="img-responsive" alt="" title="" src="startpage/01.png">
+					<img class="img-responsive" alt="" title="" src="startpage/auge-red.gif">
 					<p>Klassikforum:<br />sagen Sie's uns, fragen Sie uns</p>
 				</a>
 			</article>
 			<article style="opacity: 1;" class="text-center auge">
 				<a href="http://www.classiclike.com/">
-					<img class="img-responsive" alt="" title="" src="startpage/02.png">
+					<img class="img-responsive" alt="" title="" src="startpage/auge-gelb.gif">
 					<p>Freizeit mit Klassik:<br />wer, mit wem, wohin?</p>
 				</a>
 			</article>
 			<article style="opacity: 1;" class="text-center auge">
 				<a href="http://www.classiclike.com/">
-					<img class="img-responsive" alt="" title="" src="startpage/03.png">
+					<img class="img-responsive" alt="" title="" src="startpage/auge-green.gif">
 					<p>Musikunterricht:<br />schräge Töne adé</p>
 				</a>
 			</article>
-			<article style="opacity: 1;" class="text-center beethoven">
-				<a href="http://www.classiclike.com/">
-					<img id="beehtoven_img" class="img-responsive" alt="" title="" src="startpage/beethoven-1.jpg">
-					<p>Musikersuche/-profil:<br />für alle Anlässe(kommt in kürze)</p>
-				</a>
-			</article>
+
 			<article style="opacity: 1;" class="text-center auge">
 				<a href="http://www.classiclike.com/">
-					<img class="img-responsive" alt="" title="" src="startpage/04.png">
+					<img class="img-responsive" alt="" title="" src="startpage/auge-darkblue.gif">
 					<p>Tickets:<br /> tauschen Sie, kaufen Sie</p>
 				</a>
 			</article>
 			<article style="opacity: 1;" class="text-center auge">
 				<a href="http://www.classiclike.com/">
-					<img class="img-responsive" alt="" title="" src="startpage/05.png">
+					<img class="img-responsive" alt="" title="" src="startpage/auge-pink.gif">
 					<p>Musikgeschäfte:<br />rund um die Musik</p>
 				</a>
 			</article>
@@ -191,11 +186,16 @@
 			$('article.auge').css('opacity','0.3');
 			$(this).css('opacity','1');
 			$(this).find('p').addClass('highs');
-      $('#beehtoven_img').attr('src','startpage/beethoven-2.jpg');
+      var img_name =   $(this).find('img').attr("src");
+      img_name = img_name.substring(0, img_name.length-4);
+      $(this).find('img').attr("src", img_name + "-anim.gif");
 		})
 		$('article.auge').mouseleave(function(){
 			$('article.auge').css('opacity','1');
 			$('p').removeClass('highs');
+      var img_name =   $(this).find('img').attr("src");
+      img_name = img_name.substring(0, img_name.length-9);
+      $(this).find('img').attr("src", img_name + ".gif");
       $('#beehtoven_img').attr('src','startpage/beethoven-1.jpg');
 		})
     $('#beehtoven_img').mouseenter(function(){
