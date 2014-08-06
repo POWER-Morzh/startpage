@@ -130,7 +130,7 @@
 			</article>
 			<article style="opacity: 1;" class="text-center auge">
 				<a href="http://www.classiclike.com/">
-					<img class="img-responsive" alt="" title="" src="startpage/auge-gelb.gif">
+					<img class="img-responsive" alt="" title="" src="startpage/auge-yellow.gif">
 					<p>Freizeit mit Klassik:<br />wer, mit wem, wohin?</p>
 				</a>
 			</article>
@@ -145,12 +145,6 @@
 				<a href="http://www.classiclike.com/">
 					<img class="img-responsive" alt="" title="" src="startpage/auge-darkblue.gif">
 					<p>Tickets:<br /> tauschen Sie, kaufen Sie</p>
-				</a>
-			</article>
-			<article style="opacity: 1;" class="text-center auge">
-				<a href="http://www.classiclike.com/">
-					<img class="img-responsive" alt="" title="" src="startpage/auge-pink.gif">
-					<p>Musikgeschäfte:<br />rund um die Musik</p>
 				</a>
 			</article>
 		</div>
